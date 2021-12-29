@@ -38,3 +38,46 @@ hits['beatles'] = 'Dear Prudence'
 hits
 
 # %%
+songs['beatles']
+songs.get('stones')
+'give me shelter' in songs
+songs.get('Lucy in the sky with diamonds', 'this song is not stored')
+# %%
+songs.keys()
+songs.values()
+list(songs.keys())
+list(songs.values())
+# %%
+songs.items()
+list(songs.items())
+# %%
+len(songs)
+# %%
+old_albums = {'white album': 'beatles', 'rubber soul': 'beatles', 'how the west was won': 'led zeppelin'}
+new_albums = {'unearthed': 'johnny cash', 'give up': 'the postal service'}
+{**old_albums, **new_albums}
+old_albums.update(new_albums)
+print(old_albums)
+# %%
+g7_pop = {
+    'US':333,
+    'France':67,
+    'Germany':83,
+    'Japan':125,
+    'Italy':59,
+    'UK':67,
+    'Canada':38,
+    }
+print(g7_pop)
+del g7_pop['UK']
+print(g7_pop)
+g7_pop.pop('Italy')
+print(g7_pop)
+g7_pop.pop('France', 'item not found')
+g7_pop.pop('Spain', 'item not found')
+print(g7_pop)
+g7_pop.clear()
+print(g7_pop)
+'UAE' in g7_pop
+# %%
+

@@ -35,7 +35,7 @@ These sequences can easily be transformed to dictionaries:
 
 ```python
 ll = [['Spain', 'Madrid'], ['US', 'NYC'], ['China', 'Beijing']]
-dict(l1)
+dict(ll)
 tl = (['Spain', 'Madrid'], ['US', 'NYC'], ['China', 'Beijing'])
 dict(tl)
 lt = [('Spain', 'Madrid'), ('US', 'NYC'), ('China', 'Beijing')]

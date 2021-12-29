@@ -10,7 +10,7 @@ hlmi = {
 english_to_german = dict(dog='Hund', cat='Katz', cow='Kuh')
 # %%
 ll = [['Spain', 'Madrid'], ['US', 'NYC'], ['China', 'Beijing']]
-dict(l1)
+dict(ll)
 tl = (['Spain', 'Madrid'], ['US', 'NYC'], ['China', 'Beijing'])
 dict(tl)
 lt = [('Spain', 'Madrid'), ('US', 'NYC'), ('China', 'Beijing')]

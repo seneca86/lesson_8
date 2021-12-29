@@ -143,3 +143,70 @@ print(g7_pop)
 'UAE' in g7_pop
 ```
 
+### Assign, copy, deepcopy
+
+These commands work as in lists, so let's recap the behavior with a few examples.
+
+```python
+d1 = {'Apple': 'AAPL', 'Amazon':'AMZN', 'Tesla':'TSLA'}
+d2 = d1
+d1['Palantir'] = 'PLTR'
+print(d2)
+```
+
+```python
+d3 = d1.copy()
+print(d3)
+d1['Gold'] = 'GLD'
+print(d3)
+```
+
+```python
+import copy
+d4 = {'stocks':['AAPL', 'AMZN'], 'commodities':['GLD']}
+d5 = d4.copy()
+d6 = copy.deepcopy(d4)
+d4['commodities'].append('SLV')
+print(f'{d4=}')
+print(f'{d5=}')
+print(f'{d6=}')
+```
+
+### Compare dictionaries
+
+Comparing dictionaries only make sense to check if they are equal or different, there is no `<` or `>`.
+
+```python
+d4 == d5
+d6 != d5
+```
+
+Note that the order in which the keys were created does not matter, because keys in a dictionary do not have an intrinsic order.
+
+### Iterate over dictionaries
+
+Iteration can be done over `keys()`, `values()`, or `items()` (both).
+
+```python
+portfolio = {'stocks':['Berkshire', 'GE'], 'bonds':['TIPS', 'T-bills']}
+for security in portfolio.values():
+    print(security)
+for asset_class in portfolio.keys():
+    print(asset_class)
+for pair in portfolio.items():
+    print(pair)
+for asset_class, security in portfolio.items():
+    print(f'My portfolio contains {asset_class}, specifically {security}')
+```
+
+### Dictionary comprehensions
+
+Also analogous to list comprehensions, let's illustrate them directly with an example.
+
+```python
+words = 'How big is the cosmic endowment?'
+letter_count = {word:len(word) for word in words.split()}
+print(letter_count)
+letter_count_large = {word:len(word) for word in words.split() if len(word)>3}
+print(letter_count_large)
+```

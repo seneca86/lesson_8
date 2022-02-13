@@ -50,7 +50,7 @@ dict(ts)
 
 ## Add or change keys
 
-Adding a key or chaning a key in a dictionary has the same syntax. This is a consequence of keys in a dictionary being unique. ```python
+Adding a key or chaning a key in a dictionary has the same syntax. This is a consequence of keys in a dictionary being unique.
 ```python
 songs = {
     'elvis': 'such a night',

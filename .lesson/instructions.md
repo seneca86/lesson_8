@@ -80,7 +80,7 @@ Retriveing a key can be done with `[]` or with `get()`; existance checks can be 
 songs['beatles']
 songs.get('stones')
 'give me shelter' in songs
-songs.get('Lucy in the sky with diamonds', 'this song is not stored')
+songs.get('Lucy in the sky with diamonds', 'this band is not stored')
 ```
 
 `keys()` retrieves all keys, whereas `values()` retreives all values. The result is an iterable view, which is a temporal view, and which is more useful if put into a list.
